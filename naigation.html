@@ -4,10 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My dog website</title>
+    <link rel="stylesheet" type="stylesheet" href="style.css">
 </head>
+<style>
+    *{
+      background-color: chartreuse; 
+      font-family:fantasy; 
+      font-style: initial;
+      font-size: x-large;
+      font-display: fallback;
+      border-color: aqua;
+      border-style: dotted;
+    }
+   ul{
+    color: mediumslateblue;
+   } 
+   #para1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   }
+   .para2{
+    font-family: serif;
+   }
+   
+</style>
 <body>
     <header>
-      <h1>All ABOUT DOGS</h1>
+      <h1 style="font-family:sans-serif ; text-align: center;color:darkblue;">My Dog Website</h1>
       <nav>
         <ul>
             <li><a href="#home">Home</a></li>
@@ -19,17 +41,17 @@
     <main>
         <section>
             <article>
-                <h2>Facts about dogs</h2>
-                <P>Dogs have a sense of time. It's been proven that they know the difference between a hour and five. If conditioned to,
+                <h2 style="font-family: monospace; text-align: center;color:burlywood; font-size: x-large;">Facts about dogs</h2>
+                <P id="para 1">Dogs have a sense of time. It's been proven that they know the difference between a hour and five. If conditioned to,
                 they can predict future events, such as regular walk times.</P>
             </article>
             <aside>
-                <P>A study was conducted on dogs being away from their owners for varying hours and the studies show that dogs who were
+                <P class="para2">A study was conducted on dogs being away from their owners for varying hours and the studies show that dogs who were
                 away from their owners the longest showed the greatest amount of affection!</P>
             </aside>
         </section>
         <figure>
-            <img src="https://www.shutterstock.com/image-photo/beautiful-golden-retriever-cute-puppy-600nw-2526542701.jpg">
+            <img src="data:image/jpeg;base64,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">
             <figcaption>A cute dog</figcaption>
         </figure>
     </main>
